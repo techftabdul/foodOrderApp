@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <title>Food Order</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <h1>Order Now</h1>
+      <!-- <img src="./assets/burger.jpg" alt="Food Logo" class="logo" /> -->
+    </header>
+    <main>
+      <section id="food-menu">
+        <!-- Food items will be dynamically added here -->
+      </section>
+      <section id="order">
+        <h2>Your Order</h2>
+        <ul id="order-list">
+          <!-- Order items will be dynamically added here -->
+        </ul>
+        <p id="total-price">Total: $0.00</p>
+        <button id="place-order-btn">Place Order</button>
+      </section>
+
+      <!-- modal -->
+      <div id="payment-modal" class="modal">
+        <div class="modal-content">
+          <h2>Enter Payment Details</h2>
+          <form id="payment-form" class="payment-form">
+            <label for="card-number">Card Number:</label>
+            <input type="text" id="card-number" name="card-number" required />
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+            <label for="cvv">Email:</label>
+            <input type="text" id="email" name="text" required />
+            <button type="submit">Pay Now</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- shows 'payment succesful! your order is on the way' -->
+      <div id="cofirmation" hidden></div>
+
+      <!-- footer -->
+    </main>
+    <footer>
+      <p id="copyright-text"></p>
+      <p>Developed by <a href="#">techftabdul</a></p>
+    </footer>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
